@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>SVlogin</servlet-name>
+        <servlet-class>com.yosycompany.prograweb.servlets.SVlogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SVregistro</servlet-name>
+        <servlet-class>com.yosycompany.prograweb.servlets.SVregistro</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SVhome</servlet-name>
+        <servlet-class>com.yosycompany.prograweb.servlets.SVhome</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SVlogin</servlet-name>
+        <url-pattern>/SVlogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SVregistro</servlet-name>
+        <url-pattern>/SVregistro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SVhome</servlet-name>
+        <url-pattern>/SVhome</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
